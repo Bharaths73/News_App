@@ -1,6 +1,6 @@
 import './style.css';
 
-const API_KEY='42e8a1c832654d59a17f9ff30b4b59cc';
+const API_KEY='df40d8b123524e858870300f256a6d87';
 
 
 function hamburgerHandler(e){
@@ -75,7 +75,7 @@ async function fetchData(query){
     })
   }
   else{
-    card_wrapper.innerHTML='<div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center"><p style="color:White;font-size:3em;">No Data Found</p></div>'
+    card_wrapper.innerHTML='<div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center"><p style="color:White;font-size:2em;">No Data Found</p></div>'
   }
 }
 
