@@ -41,11 +41,14 @@ function createTemplate(data){
 
   card_wrapper.appendChild(clone);
 }
+
+
 let curSelected=null;
 async function fetchData(query){
   query.preventDefault();
   let CATEGORY;
   if(query && query.target.id==='search_container'){
+    curSelected?.classList.remove('active')
     CATEGORY=document.querySelector('#search_box').value;
     document.querySelector('#search_box').value='';
   }
@@ -66,9 +69,14 @@ async function fetchData(query){
   console.log(data);
   const card_wrapper = document.querySelector('#card_wrapper');
   card_wrapper.innerHTML = ''; 
-  data.articles.map((card)=>{
-    createTemplate(card);
-  })
+  if(data?.articles?.length>0){
+    data?.articles.map((card)=>{
+      createTemplate(card);
+    })
+  }
+  else{
+    card_wrapper.innerHTML='<div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center"><p style="color:White;font-size:3em;">No Data Found</p></div>'
+  }
 }
 
 

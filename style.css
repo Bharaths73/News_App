@@ -99,6 +99,7 @@ a{
   z-index: 1;
 }
 
+
 .single_nav{
   color: white;
   border: 2px solid rgba(255, 255, 255, 0.129);
@@ -123,14 +124,14 @@ a{
 }
 
 #card_wrapper{
-  /* width:80%; */
+  width:90%;
   position: absolute;
   padding-top: 2em;
   padding-left: 5em;
   padding-right: 5em;
   height: max-content;
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 3em;
+  margin-right: 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
@@ -218,10 +219,11 @@ p{
     margin-left: 70%;
   }
   #card_wrapper{
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    padding-left:1.7em;
-    padding-right: 1.7em;
+    width:95%;
+    margin-left: 0.3em;
+    margin-right: 0.3em; 
+    padding-left:1em;
+    padding-right: 1em;
   }
 }
 
