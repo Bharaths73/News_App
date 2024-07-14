@@ -41,16 +41,21 @@ function createTemplate(data){
 
   card_wrapper.appendChild(clone);
 }
-
+let curSelected=null;
 async function fetchData(query){
   query.preventDefault();
   let CATEGORY;
   if(query && query.target.id==='search_container'){
     CATEGORY=document.querySelector('#search_box').value;
+    document.querySelector('#search_box').value='';
   }
   else if(query && query.target.name){
     CATEGORY=query.target.name;
-    query.target.style.color='red'
+    console.log("curSelected before ",curSelected);
+    curSelected?.classList.remove('active')
+    curSelected=query.target;
+    console.log("curSelected is ",curSelected);
+    curSelected.classList.add('active')
   }
   else{
     CATEGORY='business'

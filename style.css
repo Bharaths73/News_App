@@ -188,6 +188,13 @@ p{
   font-size: medium;
   height: max-content;
 }
+.nav_link{
+  color: white;
+}
+
+.nav_link.active{
+  color:red;
+}
 
 @media screen and (max-width: 950px) {
   #nav_links{
