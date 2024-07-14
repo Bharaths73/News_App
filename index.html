@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="nav_wrapper">
+        <nav id="nav_bar">
+          <img src="./public/news.png" id="image"/>
+          <div id="nav_links">
+            <a href="#" name="entertainment" class="nav_link">Movie</a>
+            <a href="#" name="sports" class="nav_link">Sports</a>
+            <a href="#" name="technology" class="nav_link">Technology</a>
+          </div>
+  
+          <form id="search_container">
+            <input type="text" placeholder="Search" id="search_box"/>
+            <button type="submit" id="search_btn">
+              <img src="./public/search-icon-png-21.png" id="search_icon"/>
+            </button>
+            <div >
+              <img src="./public//hamburger-icon-png-11.jpg" id="hamburger"/>
+            </div>
+          </form>
+
+          
+
+          
+
+          </div>
+        </nav>
+        <div id="nav_links_div">
+          <div class="single_nav">
+            <a href="" name="entertainment" class="nav_link">Movie</a>
+          </div>
+
+          <div class="single_nav">
+            <a href="" name="sports" class="nav_link">Sports</a>
+          </div>
+
+          <div class="single_nav">
+            <a href="" name="technology" class="nav_link">Politics</a>
+          </div>
+        </div>
+
+
+        <div id="card_wrapper">
+          
+        </div>
+      </div>
+
+      <template id="template">
+        <div id="card">
+            <div id="news_img">
+                <img src="" id="news_image"/>
+            </div>
+
+            <div id="content_div">
+                <h1 id="content_heading"></h1>
+                <p id="content_desc"></p>
+            </div>
+        </div>
+    </template>
+  <script type="module" src="/main.js"></script>
+  </body>
+</html>
+
